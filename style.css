@@ -1,0 +1,707 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+/* navbar */
+header nav {
+  z-index: 15;
+  padding: 1.5rem;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 4.5rem;
+  padding-right: 2rem;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  box-shadow: 0 5px 10px 2px rgba(111, 108, 108, 0.2);
+  height: 60px;
+}
+.logo img {
+  width: auto;
+}
+nav p {
+  font-size: 1.3rem;
+}
+.searchbox {
+  position: relative;
+}
+.searchbox label {
+  position: absolute;
+  top: 30%;
+  left: 3%;
+}
+nav .searchbox input {
+  height: 50px;
+  width: 200px;
+  padding-left: 2rem;
+  border: none;
+  outline: yellow;
+  border-radius: 10px;
+}
+.searchbox input::placeholder {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.searchbox input:focus {
+  border: 1px solid rgb(255, 178, 14);
+}
+.searchbox #loginbtn {
+  background-color: transparent;
+  color: rgb(255, 178, 14);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  font-weight: 800;
+  width: 140px;
+  height: 53px;
+  border-radius: 12px;
+  box-shadow: 2px 5px 10px 5px rgba(128, 128, 128, 0.501);
+}
+
+/* banner */
+header .banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgb(255, 217, 0), rgb(255, 183, 14));
+  color: white;
+  height: 700px;
+}
+.banner .banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 65%;
+}
+.banner .banner-content h1 {
+  margin-top: -50px;
+  font-size: 6rem;
+}
+.banner .banner-content p {
+  font-size: 1.3rem;
+  color: black;
+  margin-top: 10px;
+  margin-left: -250px;
+}
+.banner-content-form {
+  height: 170px;
+  width: 800px;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-content-form input {
+  width: 73%;
+  height: 50px;
+  border: none;
+  outline: none;
+  background-color: rgba(128, 128, 128, 0.235);
+  margin: 50px auto 0 auto;
+  border-radius: 10px;
+  margin-left: -265px;
+  padding-left: 10px;
+  font-size: 1.1rem;
+}
+.banner-content-form input::placeholder {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.banner-content-form #find {
+  height: 55px;
+  width: 150px;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(220, 121, 59);
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  margin-top: 50px;
+  position: absolute;
+  left: 45.5%;
+}
+.btns-before-inp {
+  margin-top: -100px;
+  height: 50px;
+  padding: 1rem;
+  display: flex;
+}
+.btns-before-inp button {
+  height: 45px;
+  width: 120px;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(224, 218, 218, 0.302);
+  color: rgb(0, 0, 0);
+  font-size: 1.1rem;
+  border-radius: 10px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+.btns-before-inp button:first-child {
+  background-color: rgba(226, 129, 69, 0.387);
+  color: rgb(215, 108, 41);
+}
+.banner .banner-img {
+  width: 35%;
+}
+.banner .banner-img img {
+  margin-top: 200px;
+  height: 450px;
+  width: 450px;
+  object-fit: cover;
+}
+
+/*  discount items after banner */
+.discount-items {
+  display: flex;
+  margin: 0 auto;
+  width: 75%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.discount-items .card {
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  width: 275px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 2px rgba(111, 108, 108, 0.2);
+  transition: all 0.5s;
+}
+.discount-items .card:hover {
+  transform: scale(1.05);
+}
+.discount-items .card img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.discount-items .card h4 {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  padding-left: 5px;
+}
+.discount-items .card .remainder {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem;
+  width: 60%;
+  background-color: rgba(226, 129, 69, 0.387);
+  margin-top: 15px;
+  border-radius: 7px;
+  color: brown;
+}
+.discount-items .card .off {
+  background-color: rgb(232, 162, 33);
+  position: absolute;
+  bottom: 28%;
+  height: 70px;
+  width: 120px;
+  border-radius: 0 20px 0 0;
+  padding-left: 0.5rem;
+  font-size: 1.2rem;
+  color: white;
+}
+.discount-items .card .off span {
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+.discount-items .card4 img {
+  object-fit: fill;
+}
+
+/* working section */
+#working {
+  height: 550px;
+  background-color: rgba(171, 169, 169, 0.211);
+}
+#working h2 {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 2rem;
+  color: rgb(224, 121, 19);
+}
+
+.icons-working-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 0 auto;
+}
+.icons-working-section .box {
+  width: 300px;
+  margin-top: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+.icons-working-section .box h3 {
+  font-size: 1.3rem;
+}
+.icons-working-section .box p {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+/* popular items */
+#popular-items {
+  height: 600px;
+  margin-top: 20px;
+  position: relative;
+}
+#popular-items h2,
+#search-food h2,
+#featured-resturents h2 {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.item-card {
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: default;
+  position: relative;
+  width: 230px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 2px rgba(111, 108, 108, 0.312);
+  margin-top: 80px;
+  background-color: white;
+}
+.item-card img {
+  width: 100%;
+  height: 230px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+.item-card h4 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  padding-left: 5px;
+}
+.item-card p {
+  font-size: 1.1rem;
+  padding-left: 5px;
+  margin-top: 5px;
+}
+.item-card h5 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding-left: 5px;
+}
+.item-card #order {
+  width: 100%;
+  height: 55px;
+  cursor: pointer;
+  padding: 0.5rem;
+  border: none;
+  background-color: rgb(215, 108, 41);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+/* featured resturents */
+#featured-resturents {
+  margin-top: 20px;
+  position: relative;
+}
+.resturent-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+.resturent-card-container .resCard {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: default;
+  width: 300px;
+  height: 430px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 2px rgba(111, 108, 108, 0.312);
+  margin-top: 80px;
+}
+.resturent-card-container .resCard #badge {
+  position: absolute;
+  cursor: pointer;
+  top: 15px;
+  left: 15px;
+}
+#featured-resturents .resturent-card-container .resCard > #pic {
+  width: 100%;
+  height: 270px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.resturent-card-container .resCard .res-name {
+  margin-top: 5px;
+  position: relative;
+}
+.resturent-card-container .resCard .res-name .logo {
+  width: 70px;
+  height: 70px;
+  margin-left: 3px;
+}
+.resturent-card-container .resCard .res-name #n {
+  font-size: 1.5rem;
+  font-weight: 700;
+  position: absolute;
+  top: 10%;
+  left: 35%;
+}
+.resturent-card-container .resCard .res-name #rating {
+  font-size: 1.4rem;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  color: rgb(220, 146, 8);
+}
+.resCard button {
+  width: 200px;
+  height: 45px;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-top: 15px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(200, 128, 41, 0.228);
+  color: rgb(234, 85, 21);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-left: 5px;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.615);
+}
+.resCard:nth-child(6) button,
+.resCard:nth-child(4) button,
+.resCard:nth-child(5) button {
+  background-color: rgba(22, 134, 22, 0.132);
+  color: green;
+}
+.resCard:nth-child(7) button,
+.resCard:nth-child(8) button {
+  background-color: rgba(5, 39, 161, 0.132);
+  color: rgb(13, 0, 128);
+}
+
+/* search food section */
+#search-food {
+  padding-bottom: 50px;
+  margin-top: 50px;
+  background-color: rgba(229, 213, 192, 0.347);
+}
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cirle-single {
+  width: 210px;
+  margin-top: 50px;
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+.cirle-single .circle-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(30, 28, 28, 0.595);
+  overflow: hidden;
+}
+.circle-container .cirle-single .circle-img img {
+  transition: all 0.5s;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.cirle-single .circle-img:hover img {
+  transform: scale(1.3);
+}
+.cirle-single p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 14px;
+  width: 100%;
+}
+.picture-box {
+  height: 500px;
+  background-color: rgba(203, 168, 126, 0.361);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.picture-box img {
+  scale: 0.76;
+}
+/* card-centered */
+#card-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card-box1 {
+  margin: 0 auto;
+  margin-top: 80px;
+  height: 550px;
+  width: 80%;
+  background-color: white;
+  display: flex;
+  box-shadow: 2px 0 8px rgba(101, 99, 99, 0.358);
+  border-radius: 15px;
+}
+.card-box1:nth-child(2) {
+  flex-direction: row-reverse;
+}
+.card-box1 .imagebox {
+  height: 100%;
+  width: 62%;
+}
+.card-box1:nth-child(2) .imagebox img {
+  border-radius: 15px 0px 0px 15px;
+}
+.card-box1 .imagebox img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0px 15px 15px 0px;
+}
+.card-box1 .contentbox {
+  width: 38%;
+  height: 100%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 2.2rem;
+  position: relative;
+}
+.card-box1 .contentbox h2 {
+  margin-top: 60px;
+  font-size: 2.7rem;
+}
+.contentbox h2 span {
+  color: rgb(255, 183, 14);
+}
+.contentbox p {
+  font-size: 1.15rem;
+  width: 93%;
+  margin-top: 20px;
+}
+.contentbox button {
+  position: absolute;
+  bottom: 20px;
+  width: 80%;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: white;
+  background-color: rgb(243, 166, 8);
+  box-shadow: 0 0 10px rgba(101, 99, 99, 0.302);
+  cursor: pointer;
+}
+/* footer */
+footer {
+  margin-top: 120px;
+}
+footer .footer-image {
+  width: 100%;
+  position: relative;
+}
+footer .footer-image img {
+  width: 100%;
+  object-fit: cover;
+}
+footer .footer-image .footer-image-upper-content {
+  position: absolute;
+  left: 23%;
+  top: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-image .footer-image-upper-content h2 {
+  color: white;
+  font-size: 2.9rem;
+  width: 70%;
+  text-align: center;
+}
+.footer-image-upper-content button {
+  margin-top: 30px;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: white;
+  background-color: rgb(243, 90, 19);
+  cursor: pointer;
+}
+.footer-links {
+  background-color: rgba(0, 0, 0, 0.871);
+  margin-top: -8px;
+  color: white;
+}
+.footer-links .cities {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.293);
+  padding-bottom: 4.5rem;
+}
+.footer-links .cities h3 {
+  font-size: 1.5rem;
+  padding-top: 4.5rem;
+}
+.footer-links .cities ul {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+.footer-links .cities ul li {
+  list-style: none;
+  font-size: 1.1rem;
+}
+/* footer last */
+.end-footer {
+  width: 80%;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.293);
+  padding-bottom: 4.5rem;
+}
+.end-footer .right-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+.end-footer .right-end h3 {
+  font-size: 1.5rem;
+  padding-top: 4.5rem;
+  margin-bottom: 30px;
+}
+.end-footer .right-end li {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+.end-footer .left-end {
+  width: 40%;
+  height: 100%;
+  padding-left: 3rem;
+}
+.end-footer .left-end h4 {
+  margin-top: 70px;
+  font-size: 1.2rem;
+}
+.end-footer .left-end .icons-social {
+  margin-top: 20px;
+}
+.end-footer .left-end .icons-social a {
+  font-size: 1.7rem;
+  color: rgba(255, 255, 255, 0.587);
+  margin-right: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.left-end p {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.left-end .email-box {
+  margin-top: 25px;
+  position: relative;
+}
+.left-end .email-box label {
+  font-size: 1.7rem;
+  color: rgba(255, 255, 255, 0.696);
+  position: absolute;
+  left: 3%;
+  top: 12%;
+}
+.left-end .email-box input {
+  width: 60%;
+  height: 55px;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-left: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding-left: 60px;
+  color: rgba(255, 255, 255, 0.698);
+}
+.left-end .email-box input::placeholder {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.698);
+  font-weight: 500;
+}
+.left-end .email-box button {
+  width: 120px;
+  height: 55px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(232, 146, 6);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 5px;
+}
+#copy-write {
+  width: 80%;
+  margin: 15px auto 0 auto;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.727);
+  padding-bottom: 2rem;
+}

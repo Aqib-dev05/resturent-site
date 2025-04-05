@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resturent</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsiveResturent.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="logoes/Logo.png" alt="" />
+        </div>
+        <p>Deliver to: Current location <b>Sharaqpur Sharif, Punjab</b></p>
+        
+        <div class="searchbox">
+          <label for="search"
+            ><i class="fa-solid fa-magnifying-glass" style="color: #ffb30e"></i
+          ></label>
+          <input type="text" id="search" placeholder="Search Food" />
+          <button id="loginbtn">
+            <i class="fa-solid fa-user" style="color: #ffb30e"></i>
+            Login
+          </button>
+        </div>
+      </nav>
+
+      <div class="banner">
+        <div class="banner-content">
+          <h1>Are you starving?</h1>
+          <p>Within a few clicks,find meals that are accessible near you</p>
+          <div class="banner-content-form">
+            <div class="btns-before-inp">
+              <button id="delivery">
+                <i class="fa-solid fa-motorcycle" style="color: #d76c29"></i>
+                Delivery
+              </button>
+              <button id="pickup">
+                <i class="fa-solid fa-lock"></i> Pickup
+              </button>
+            </div>
+            <input
+              type="text"
+              id="banner-inp"
+              placeholder="Enter your Address"
+            />
+            <button id="find">
+              <i
+                class="fa-solid fa-magnifying-glass"
+                style="color: #ffffff"
+              ></i>
+              Find Food
+            </button>
+          </div>
+        </div>
+        <div class="banner-img">
+          <img src="assets/banner Img.png" />
+        </div>
+      </div>
+    </header>
+    <br /><br /><br />
+    <!-- main statrs -->
+    <main>
+      <section class="discount-items">
+        <div class="card card1">
+          <img src="assets/salad.jpg" alt="" />
+          <h4>Greys Vage</h4>
+          <div class="remainder">6 days Remaining</div>
+          <div class="off"><span>15</span>% Off</div>
+        </div>
+
+        <div class="card card2">
+          <img src="assets/jennifer-schmidt-zOlQ7lF-3vs-unsplash.jpg" alt="" />
+          <h4>Chicken Salad</h4>
+          <div class="remainder">4 days Remaining</div>
+          <div class="off"><span>10</span>% Off</div>
+        </div>
+        <div class="card card3">
+          <img src="assets/Image.jpg" alt="" />
+          <h4>Vegian Salad</h4>
+          <div class="remainder">2 days Remaining</div>
+          <div class="off"><span>25</span>% Off</div>
+        </div>
+        <div class="card card4">
+          <img src="assets/noodles.jpg" alt="" />
+          <h4>Noodles</h4>
+          <div class="remainder">9 days Remaining</div>
+          <div class="off"><span>20</span>% Off</div>
+        </div>
+      </section>
+      <br /><br /><br />
+      <!-- section 2 statrs -->
+      <section id="working">
+        <h2>How does it work</h2>
+        <br />
+        <div class="icons-working-section">
+          <div class="box">
+            <img src="icons/Map Marker.png" alt="" />
+            <h3>Select location</h3>
+            <p>Choose the location where food will be delivered.</p>
+          </div>
+
+          <div class="box">
+            <img src="icons/Menu.png" alt="" />
+            <h3>Choose order</h3>
+            <p>Check over hundreds of enus to pick your favourite food</p>
+          </div>
+
+          <div class="box">
+            <img src="icons/Invoice.png" alt="" />
+            <h3>Pay advanced</h3>
+            <p>It's quick,safe and simple.Select severals methods of payment</p>
+          </div>
+
+          <div class="box">
+            <img src="icons/Donut.png" alt="" />
+            <h3>Enjoy meals</h3>
+            <p>Food is made and delivered directly to your home.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- popular items -->
+      <section id="popular-items">
+        <h2>Popular items</h2>
+        <div class="card-container">
+          <div class="item-card">
+            <img src="assets/burger.jpg" alt="" />
+            <h4>Cheese Burger</h4>
+            <p style="color: #ffb20e">
+              <i class="fa-solid fa-location-dot"></i> Burger Arena
+            </p>
+            <h5>$3.88</h5>
+            <button id="order">Order Now</button>
+          </div>
+
+          <div class="item-card">
+            <img src="assets/chicken full.jpg" alt="" />
+            <h4>Chicken</h4>
+            <p style="color: #ffb20e">
+              <i class="fa-solid fa-location-dot"></i> Top Sticks
+            </p>
+            <h5>$8.9</h5>
+            <button id="order">Order Now</button>
+          </div>
+
+          <div class="item-card">
+            <img src="assets/club sandwitch.jpg" style="object-fit: fill" />
+            <h4>Sandwitch</h4>
+            <p style="color: #ffb20e">
+              <i class="fa-solid fa-location-dot"></i> Subway
+            </p>
+            <h5>$1.99</h5>
+            <button id="order">Order Now</button>
+          </div>
+
+          <div class="item-card">
+            <img src="assets/beef steak.jpg" alt="" />
+            <h4>Beef Steak</h4>
+            <p style="color: #ffb20e">
+              <i class="fa-solid fa-location-dot"></i> Carnivorus
+            </p>
+            <h5>$9.99</h5>
+            <button id="order">Order Now</button>
+          </div>
+
+          <div class="item-card">
+            <img src="assets/lotus shake.jpg" />
+            <h4>Lotus Shake</h4>
+            <p style="color: #ffb20e">
+              <i class="fa-solid fa-location-dot"></i> Subway
+            </p>
+            <h5>$1.2</h5>
+            <button id="order">Order Now</button>
+          </div>
+
+
+        </div>
+      </section>
+      <!-- featured resturents -->
+      <section id="featured-resturents">
+        <h2>Featured Resturents</h2>
+        <div class="resturent-card-container">
+          <div class="resCard">
+            <img src="icons/Badge.png" id="badge" />
+            <img src="assets/pizza.jpg" id="pic" />
+            <div class="res-name">
+              <img src="logoes/Property 1=1.png" class="logo" />
+              <span id="n">Pizza Pino</span>
+              <span id="rating">&#9733 46</span>
+            </div>
+            <button>Opens tomorow</button>
+          </div>
+
+          <div class="resCard">
+            <img src="icons/Badge.png" id="badge" />
+            <img src="assets/Two burgers.jpg" id="pic" />
+            <div class="res-name">
+              <img src="logoes/Property 1=8.png" class="logo" />
+              <span id="n">Foodworld</span>
+              <span id="rating">&#9733 49</span>
+            </div>
+            <button>Opens tomorow</button>
+          </div>
+
+          <div class="resCard">
+            <img src="icons/Badge.png" id="badge" />
+            <img src="assets/sawarammah 2.jpg" id="pic" />
+            <div class="res-name">
+              <img src="logoes/Property 1=7.png" class="logo" />
+              <span id="n">Subway</span>
+              <span id="rating">&#9733 50</span>
+            </div>
+            <button>Opens tomorow</button>
+          </div>
+
+          <div class="resCard">
+            <img src="icons/Badge.png" id="badge" />
+            <img src="assets/steak with fries.jpg" id="pic" />
+            <div class="res-name">
+              <img src="logoes/Property 1=4.png" class="logo" />
+              <span id="n">Ruby Tuesday</span>
+              <span id="rating">&#9733 23</span>
+            </div>
+            <button>Opens tomorow</button>
+          </div>
+
+          <div class="resCard">
+            <img src="icons/Badge.png" id="badge" />
+            <img src="assets/nuggets.jpg" id="pic" />
+            <div class="res-name">
+              <img src="logoes/Property 1=5.png" class="logo" />
+              <span id="n">KFC</span>
+              <span id="rating">&#9733 48</span>
+            </div>
+            <button>Opens tomorow</button>
+          </div>
+
+          <div class="resCard">
+            <img src="icons/Badge.png" id="badge" />
+            <img src="assets/cake.jpg" id="pic" />
+            <div class="res-name">
+              <img src="logoes/Property 1=6.png" class="logo" />
+              <span id="n">Dunkin </span>
+              <span id="rating">&#9733 19</span>
+            </div>
+            <button>Opens tomorow</button>
+          </div>
+
+          <div class="resCard">
+            <img src="icons/Badge.png" id="badge" />
+            <img
+              src="assets/emile-mbunzama-cLpdEA23Z44-unsplash.jpg"
+              id="pic"
+            />
+            <div class="res-name">
+              <img src="logoes/Property 1=3.png" class="logo" />
+              <span id="n">Taco Bell</span>
+              <span id="rating">&#9733 35</span>
+            </div>
+            <button>Opens tomorow</button>
+          </div>
+
+          <div class="resCard">
+            <img src="icons/Badge.png" id="badge" />
+            <img src="assets/salad.jpg" id="pic" />
+            <div class="res-name">
+              <img src="logoes/Property 1=2.png" class="logo" />
+              <span id="n">Red Square</span>
+              <span id="rating">&#9733 43</span>
+            </div>
+            <button>Opens tomorow</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- search by food -->
+      <section id="search-food">
+        <h2>Search by Food</h2>
+        <div class="circle-container">
+          <div class="cirle-single">
+            <div class="circle-img">
+              <img src="assets/pizza uncut.jpg" />
+            </div>
+            <p>Pizza</p>
+          </div>
+
+          <div class="cirle-single">
+            <div class="circle-img">
+              <img src="assets/burger.jpg" />
+            </div>
+            <p>Burger</p>
+          </div>
+
+          <div class="cirle-single">
+            <div class="circle-img">
+              <img src="assets/noodles.jpg" style="object-fit: fill" />
+            </div>
+            <p>Noodles</p>
+          </div>
+
+          <div class="cirle-single">
+            <div class="circle-img">
+              <img src="assets/club sandwitch.jpg" />
+            </div>
+            <p>Sandwitch</p>
+          </div>
+
+          <div class="cirle-single">
+            <div class="circle-img">
+              <img src="assets/steak tomato.jpg" />
+            </div>
+            <p>Steak</p>
+          </div>
+
+          <div class="cirle-single">
+            <div class="circle-img">
+              <img src="assets/loaded fries.jpg" />
+            </div>
+            <p>Fries</p>
+          </div>
+        </div>
+      </section>
+      <!-- picture -->
+      <div class="picture-box">
+        <img src="assets/Card.png" alt="" />
+      </div>
+      <!-- card-centered -->
+      <section id="card-centered">
+        <div class="card-box1">
+          <div class="contentbox">
+            <h2>Best deals <span>Crispy Sandwiches</span></h2>
+            <p>
+              Enjoy the large size of sandwiches. Complete perfect slice of
+              sandwiches.
+            </p>
+            <button>
+              PROCEED TO ORDER <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="imagebox">
+            <img src="assets/Right.jpg" />
+          </div>
+        </div>
+
+        <div class="card-box1">
+          <div class="contentbox">
+            <h2>Celebrate parties with <span>Fried Chicken</span></h2>
+            <p>
+              Get the best fried chicken smeared with a lip smacking lemon chili
+              flavor,Check out best deals for fried chicken.
+            </p>
+            <button>
+              PROCEED TO ORDER <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="imagebox">
+            <img src="assets/grilled items.jpg" />
+          </div>
+        </div>
+
+        <div class="card-box1">
+          <div class="contentbox">
+            <h2>Wanna eat hot & spicy <span>Pizza?</span></h2>
+            <p>
+              Pair up with a friend and enjoy the hot and crispy pizza pops. Try
+              it with the best deals.
+            </p>
+            <button>
+              PROCEED TO ORDER <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="imagebox">
+            <img src="assets/pizza z.jpg" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="footer-image">
+        <div class="footer-image-upper-content">
+          <h2>Are you ready to order with the best deals?</h2>
+          <button>
+            Proceed to order <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+        <img src="assets/Image footer.png" />
+      </div>
+
+      <div class="footer-links">
+        <div class="cities">
+          <h3>Our top cities</h3>
+          <ul>
+            <li>Athens</li>
+            <li>Amsterdam</li>
+            <li>Austin</li>
+            <li>Barcelona</li>
+            <li>Berlin</li>
+            <li>Boston</li>
+            <li>Brussels</li>
+            <li>Budapest</li>
+            <li>Chicago</li>
+            <li>Charlotte</li>
+            <li>Columbus</li>
+            <li>Copenhagen</li>
+            <li>Dallas</li>
+            <li>Denver</li>
+            <li>Dublin</li>
+            <li>El Paso</li>
+            <li>Fort Worth</li>
+            <li>Frankfurt</li>
+            <li>Hamburg</li>
+            <li>Helsinki</li>
+            <li>Houston</li>
+            <li>Indianapolis</li>
+            <li>Jacksonville</li>
+            <li>Lisbon</li>
+            <li>London</li>
+            <li>Los Angeles</li>
+            <li>Madrid</li>
+            <li>Miami</li>
+            <li>Munich</li>
+            <li>New York</li>
+            <li>Oslo</li>
+            <li>Paris</li>
+            <li>Philadelphia</li>
+            <li>Phoenix</li>
+            <li>Prague</li>
+            <li>Rome</li>
+            <li>San Antonio</li>
+            <li>San Diego</li>
+            <li>San Francisco</li>
+            <li>San Francisco</li>
+            <li>San Jose</li>
+            <li>Seattle</li>
+            <li>Stockholm</li>
+            <li>Stuttgart</li>
+            <li>Vienna</li>
+            <li>Warsaw</li>
+            <li>Washington</li>
+            <li>Zurich</li>
+          </ul>
+        </div>
+        <!-- last of footer -->
+        <div class="end-footer">
+          <div class="right-end">
+            <div>
+              <h3>Company</h3>
+              <li>About us</li>
+              <li>Team</li>
+              <li>Careers</li>
+              <li>Blog</li>
+            </div>
+            <div>
+              <h3>Contact</h3>
+              <li>Help & Support</li>
+              <li>Partner with us</li>
+              <li>Ride with us</li>
+            </div>
+            <div>
+              <h3>Legal</h3>
+              <li>Terms & Conditions</li>
+              <li>Refund & Cencellation</li>
+              <li>Privacy Policy</li>
+              <li>Cookie Policy</li>
+            </div>
+          </div>
+          <!-- left side -->
+          <div class="left-end">
+            <h4>FOLOW US</h4>
+            <div class="icons-social">
+              <a href="https://www.instagram.com" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="https://www.twitter.com" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </div>
+            <p>Receive exclusive offers in your mailbox</p>
+            <div class="email-box">
+              <label for="email"><i class="fa-solid fa-envelope"></i></label>
+              <input type="email" id="email" placeholder="Enter your email" />
+              <button>Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <p id="copy-write">All rights Reserved &copy; 2023 by Resturent.</p>
+      </div>
+    </footer>
+  </body>
+</html>
