@@ -2,7 +2,7 @@
   header nav {
     padding: 0;
     justify-content: center;
-    height: 60px;
+    height: 70px;
   }
   nav p {
     display: none;
@@ -174,7 +174,7 @@
     padding: 0.8rem;
     font-size: 1rem;
     font-weight: 800;
-    width: 94%;
+    width: 80%;
     margin-inline: auto;
   }
   /* footer */
@@ -235,7 +235,7 @@
   }
   .left-end .email-box label {
     font-size: 1.2rem;
-    top: 15%;
+    top: 9%;
   }
   .left-end .email-box input {
     width: 94%;
@@ -247,7 +247,7 @@
     font-size: 1rem;
   }
   .left-end .email-box button {
-    width: 70%;
+    width: 65%;
     font-size: 1rem;
     font-weight: 600;
     margin-top: 50px;
