@@ -492,6 +492,7 @@ header .banner {
   display: flex;
   box-shadow: 2px 0 8px rgba(101, 99, 99, 0.358);
   border-radius: 15px;
+  position: relative;
 }
 .card-box1:nth-child(2) {
   flex-direction: row-reverse;
@@ -512,14 +513,14 @@ header .banner {
 .card-box1 .contentbox {
   width: 38%;
   height: 100%;
-  border-radius: 15px;
+  border-radius: inherit;
   display: flex;
   flex-direction: column;
-  padding: 2.2rem;
+  padding-inline: 2.2rem;
   position: relative;
 }
 .card-box1 .contentbox h2 {
-  margin-top: 60px;
+  margin-top: 50px;
   font-size: 2.7rem;
 }
 .contentbox h2 span {
@@ -533,7 +534,7 @@ header .banner {
 .contentbox button {
   position: absolute;
   bottom: 20px;
-  width: 80%;
+  width: 70%;
   padding: 1rem;
   border: none;
   border-radius: 10px;
