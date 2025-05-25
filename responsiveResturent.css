@@ -268,7 +268,7 @@
   header nav {
     padding: 0;
     justify-content: center;
-    height: 60px;
+    height: 70px;
   }
   nav p {
     display: none;
@@ -441,7 +441,8 @@
     padding: 1rem;
     font-size: 1rem;
     font-weight: 800;
-    width: 96%;
+    width: 80%;
+    align-self: center;
     margin-inline: auto;
   }
   /* footer */
